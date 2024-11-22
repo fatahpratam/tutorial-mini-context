@@ -23,19 +23,19 @@ Link: [Mini Context](https://fatahpratam.github.io/tutorial-mini-context/)
 ## Cara mengatur Context
 ### Membuat Context
 - Buat folder context
-- Buat file UserContext.js untuk membuat `Context` untuk variabel user.
+- Buat file UserContext.js untuk membuat `Context` untuk variabel `user`.
 - Di dalam file, panggil method `createContext()`, simpan hasil panggilan ke dalam variabel, dan export variabel tersebut.
-- Buat file UserContextProvider.jsx untuk membuat Context Provider untuk variabel user.
+- Buat file UserContextProvider.jsx untuk membuat Context Provider untuk variabel `user`.
 - Di dalam file, buat sebuah fungsi `UserContextProvider` dengan parameter `{ children }`.
-- Di dalam fungsi tersebut, Buat state untuk variabel user dengan setUser sebagai fungsi pengubah state.
+- Di dalam fungsi tersebut, Buat state untuk variabel `user` dengan `setUser` sebagai fungsi pengubah state.
 - Import `UserContext` dari file UserContext.js sebelumnya.
-- Kembalikan JSX `UserContext.Provider` dengan argument untuk kunci 'value' dengan object `{user, setUser}` dari state sebelumya.
+- Kembalikan JSX `UserContext.Provider` dengan argument untuk kunci `value` dengan object `{user, setUser}` dari state sebelumya.
 - Panggil variabel children di dalam JSX `UserContext.Provider`.
 - Terakhir, export fungsi `UserContextProvider`.
 
 ### Menggunakan Context
 - Import `UserContextProvider` dan apit component yang akan menggunakan `Context` dengan JSX `UserContextProvider`.
-- Untuk mengakses atau mengubah variabel user, import `UserContext` dan panggil method `useContext` dengan `UserContext` sebagai argument-nya.
+- Untuk mengakses atau mengubah variabel `user`, import `UserContext` dan panggil method `useContext` dengan `UserContext` sebagai argument-nya.
 
 ## Fungsi Context
 - `createContext()`: Memungkinkan Anda membuat Konteks yang dapat disediakan atau dibaca oleh komponen
